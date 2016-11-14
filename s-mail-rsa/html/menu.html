@@ -1,0 +1,51 @@
+<center>
+	<table>
+		<tr>
+			<td rowspan="3" style="width: 40%; text-align: left; vertical-align: top;">
+				 &nbsp; 
+			</td>
+			<td style="text-align: center; vertical-align: middle;">
+				<img src="<?php print($webp); ?>/img/logo.png" style="height: 64px;" />
+			</td>
+			<td rowspan="3" style="width: 40%; text-align: right; vertical-align: top;">
+				<table style="float: right; margin-top: 5px; margin-right: 5px;">
+					<tr><td>
+						<div class="alert alert-success"><center><b>Your Pub Key</b></center>
+						 &nbsp; <br />
+						<span id="keyi" style="font-family: monospace;"><center>N/A &nbsp; <br /> &nbsp; <br /> &nbsp; <br /> &nbsp; <br /> &nbsp; <br /></center></span></div>
+					</td></tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center; vertical-align: top;">
+				<div class="menubar">
+					 &nbsp; 
+					 &nbsp; 
+					<?php if ($auth == 0) { ?>
+					<a href="<?php print($webp); ?>/"><img src="<?php print($webp); ?>/img/home.png" style="height: 30px; margin-bottom: 2px; <?php print($hpag[0]); ?>" class="menuitem" /></a>
+					 &nbsp; 
+					<a href="<?php print($webp); ?>/join/"><img src="<?php print($webp); ?>/img/join.png" style="height: 34px; <?php print($hpag[1]); ?>" class="menuitem" /></a>
+					<?php } ?>
+					<?php if ($auth == 1) { ?>
+					<a href="<?php print($webp); ?>/"><img src="<?php print($webp); ?>/img/mail.png" style="height: 30px; margin-top: 3px; <?php print($hpag[0]); ?>" class="menuitem" /></a>
+					 &nbsp; 
+					<a href="<?php print($webp); ?>/contacts/"><img src="<?php print($webp); ?>/img/user.png" style="height: 30px; margin-bottom: -2px; <?php print($hpag[1]); ?>" class="menuitem" /></a>
+					 &nbsp; 
+					<a href="<?php print($webp); ?>/chat/"><img src="<?php print($webp); ?>/img/chat.png" style="height: 28px; margin-bottom: -2px; <?php print($hpag[2]); ?>" class="menuitem" /></a>
+					 &nbsp; 
+					<a href="<?php print($webp); ?>/settings/"><img src="<?php print($webp); ?>/img/conf.png" style="height: 28px; margin-bottom: -2px; <?php print($hpag[3]); ?>" class="menuitem" /></a>
+					 &nbsp; 
+					<a href="<?php print($webp); ?>/logout/"><img src="<?php print($webp); ?>/img/exit.png" style="height: 26px; margin-bottom: -2px; <?php print($hpag[4]); ?>" class="menuitem" /></a>
+					<?php } ?>
+					 &nbsp; 
+					 &nbsp; 
+				</div>
+			</td>
+		</tr>
+		<tr style="height: 100%;">
+			<td> &nbsp; </td>
+		</tr>
+	</table>
+</center>
+<br />

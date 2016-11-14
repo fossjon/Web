@@ -1,0 +1,39 @@
+<head>
+	<title>Secure Email [S-Mail]</title>
+	
+	<link rel="stylesheet" type="text/css" href="<?php print($webp); ?>/js/bs/css/bootstrap.min.css" />
+	
+	<link rel="stylesheet" type="text/css" href="<?php print($webp); ?>/js/main.css" />
+	
+	<style>
+		.menubar
+		{
+			<?php
+				if(strlen(strstr($_SERVER["HTTP_USER_AGENT"], "Firefox")) > 0) { print("height: 42px !important;\n"); }
+			?>
+		}
+	</style>
+	
+	<script type="text/javascript" src="<?php print($webp); ?>/js/jquery.js"></script>
+	<script type="text/javascript" src="<?php print($webp); ?>/js/sha256.js"></script>
+	<script type="text/javascript" src="<?php print($webp); ?>/js/jsaes.js"></script>
+	<script type="text/javascript" src="<?php print($webp); ?>/js/jsencrypt.js"></script>
+	<script type="text/javascript" src="<?php print($webp); ?>/js/bs/js/bootstrap.min.js"></script>
+	
+	<script>
+		var enckey = "<?php print($pkey); ?>", deckey = "";
+		var rsaobj = null, prikey = "", pubkey = "";
+		
+		var dnsn = "<?php print($name); ?>";
+		var webp = "<?php print($webp); ?>";
+		var user = "<?php print($user); ?>";
+		var mail = [<?php print($smails); ?>];
+		
+		var pkeys = {}, skeys = {};
+	</script>
+	
+	<script type="text/javascript" src="<?php print($webp); ?>/js/proto.js"></script>
+	<script type="text/javascript" src="<?php print($webp); ?>/js/crypto.js"></script>
+	<script type="text/javascript" src="<?php print($webp); ?>/js/form.js"></script>
+	<script type="text/javascript" src="<?php print($webp); ?>/js/ajax.js"></script>
+</head>

@@ -1,0 +1,93 @@
+html, body
+{
+	background-image: url(../img/bg.png) !important;
+	background-repeat: repeat !important;
+	color: white !important;
+	height: 100% !important;
+}
+
+a
+{
+	color: #3366FF !important;
+}
+
+pre
+{
+	margin: 0px !important;
+}
+
+.menubar
+{
+	background-color: #cccccc !important;
+	height: 36px !important;
+	display: inline-block !important;
+	border: 3px solid white !important;
+	border-radius: 4px !important;
+	box-sizing: content-box !important;
+}
+
+.divtable
+{
+	background-color: #fff !important;
+	border: 1px solid #ddd !important;
+	border-radius: 4px !important;
+	padding-top: 8px !important;
+	padding-left: 8px !important;
+	padding-right: 8px !important;
+}
+
+.menuitem
+{
+	opacity: 0.7 !important;
+}
+
+.menuitem:hover
+{
+	opacity: 1.0 !important;
+}
+
+.txtred
+{
+	color: #FF0000 !important;
+}
+
+.txtblue
+{
+	color: #3366FF !important;
+}
+
+.txtgreen
+{
+	color: #00FF00 !important;
+}
+
+.colmin
+{
+	width: 0px !important;
+	white-space: nowrap !important;
+}
+
+.coltop
+{
+	vertical-align: top !important;
+}
+
+.colright
+{
+	text-align: right !important;
+}
+
+.alert
+{
+	margin-bottom: 5px !important;
+}
+
+footer
+{
+	background-image: url(../img/bg.png) !important;
+	position: fixed !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	right: 0 !important;
+	text-align: center !important;
+}

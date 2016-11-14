@@ -1,0 +1,43 @@
+<head>
+	<title>Secure Email [S-Mail]</title>
+	
+	<link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABvUlEQVQ4jcWTzWpTURDHf+eec89Nzm1qgrHXBD8W0S4qCFZB6EJXPoNbH8SnEFe+gm9gIaKgULCbmJJSav2AJo2JuZqkufm4ucfFJcaNm2wcmMXMMH/+858ZYa1lFRNCAOCs1P030LNqZzUKwLDfRwE82TaczgxryYhYeigHfDlnYDUXGBFJgzufAjASmoABkZfj6Yt6OsKbkwG+jFHGIKTEUZKp1BgXYm3QEoTWOFqzYSBSGV5/bC01qJTzVOtnhMMxvgYLJDZ1a9NYCMi4cPYz4uVei0q5sARYNx53bgTsHf+g/i0kq9LCotkBXAf2T0KqjR7bmyXyax5AqgGAkg5BIcfhaY/2rzEPtwJc6SAExEnCbq1NbzjhykYBJZfLUwCzeE7tc4esK3i8c43uYMpurcm9ShEBfPjU5f7NIsWc5m2jw8GXiLuVi8s1lvwZt66uc73oEycQJ3A+jnl/1AFgZ/MSfkahHFAOfO2ec9wa8updI2Xw6HaAtYL+2LI4CqUkD7Yu/6E6iS0TQAClvKFcyC4B2q2QMHYZCY9ZIjBugj8ZMJXeP3OuSnVQ35tNnh+ErPwT//+ZVmWwsN8umK/0JoimbwAAAABJRU5ErkJggg==" rel="icon" type="image/x-icon" />
+	
+	<link rel="stylesheet" type="text/css" href="<?php print($webp); ?>/js/bs/css/bootstrap.min.css" />
+	
+	<link rel="stylesheet" type="text/css" href="<?php print($webp); ?>/js/main.css" />
+	
+	<style>
+		.menubar
+		{
+			<?php
+				if(strlen(strstr($_SERVER["HTTP_USER_AGENT"], "Firefox")) > 0) { print("height: 42px !important;\n"); }
+			?>
+		}
+	</style>
+	
+	<script type="text/javascript" src="<?php print($webp); ?>/js/jquery.js"></script>
+	<script type="text/javascript" src="<?php print($webp); ?>/js/sha256.js"></script>
+	<script type="text/javascript" src="<?php print($webp); ?>/js/jsaes.js"></script>
+	<script type="text/javascript" src="<?php print($webp); ?>/js/jsbn.js"></script>
+	<script type="text/javascript" src="<?php print($webp); ?>/js/jsbn2.js"></script>
+	<script type="text/javascript" src="<?php print($webp); ?>/js/ec.js"></script>
+	<script type="text/javascript" src="<?php print($webp); ?>/js/bs/js/bootstrap.min.js"></script>
+	
+	<script>
+		var enckey = "<?php print($pkey); ?>", deckey = "";
+		var keyobj = null, prikey = "", pubkey = "";
+		
+		var dnsn = "<?php print($name); ?>";
+		var webp = "<?php print($webp); ?>";
+		var user = "<?php print($user); ?>";
+		var mail = [<?php print($smails); ?>];
+		
+		var pkeys = {}, skeys = {};
+	</script>
+	
+	<script type="text/javascript" src="<?php print($webp); ?>/js/proto.js"></script>
+	<script type="text/javascript" src="<?php print($webp); ?>/js/crypto.js"></script>
+	<script type="text/javascript" src="<?php print($webp); ?>/js/form.js"></script>
+	<script type="text/javascript" src="<?php print($webp); ?>/js/ajax.js"></script>
+</head>
